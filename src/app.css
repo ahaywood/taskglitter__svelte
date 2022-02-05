@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+
+:root {
+  --purple: #4f00af;
+  --electricIndigo: #6b00f5;
+  --lavandarIndigo: #9444ff;
+  --melrose: #c0beff;
+  --blueMoon: #ebecff;
+  --goldenTainoi: #ffc854;
+  --athensGray: #eff0f7;
+  --hawkesBlue: #d9dbe9;
+  --stormGray: #6e7093;
+  --white: #ffffff;
+
+  /* set page background color */
+  --auth: var(--purple);
+  --projects: var(--electricIndigo);
+  --tasks: var(--white);
+
+  /* fonts */
+  --poppins: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--poppins);
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+  border-radius: 1rem;
+  box-sizing: border-box;
+  font-family: var(--poppins);
+  font-size: 1rem;
+  height: 64px;
+  line-height: 1.5;
+  padding: 0 24px;
+  width: 100%;
+}
+
+button.add {
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  height: 56px;
+  justify-content: center;
+  width: 56px;
+}
+
+.projects button.add .plus {
+  fill: var(--white);
+}
+
+.tasks button.add .plus {
+  fill: var(--electricIndigo);
+}
+
+button.add:hover {
+  background: var(--goldenTainoi);
+}
+
+/* wraps content on the projects and tasks page */
+.content {
+  grid-column: 4 / span 6;
+  padding-top: 100px;
+}
