@@ -1,4 +1,5 @@
 {
+	"extends": "@tsconfig/svelte/tsconfig.json",
 	"compilerOptions": {
 		"moduleResolution": "node",
 		"module": "es2020",
@@ -49,5 +50,8 @@
 			],
 		}
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"],
+	"exclude": [
+		"./built/**/*"
+	]
 }

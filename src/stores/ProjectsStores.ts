@@ -34,5 +34,8 @@ export const addProject = async (project) => {
       },
     ]);
   if (error) throw new Error(error.message);
+  else {      // if there's any errors, manually add the item to the store
+    console.log('add project to list')
+  }
   return data;
 }

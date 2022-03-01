@@ -96,7 +96,6 @@
   }
 
   input[type=text] {
-    border: none;
     width: 100%;
   }
 </style>

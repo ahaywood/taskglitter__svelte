@@ -1,15 +1,10 @@
 <script>
-  import { updatePath } from "$stores/GlobalStore";
   import { fetchProjects, getProjectList } from "$stores/ProjectsStores";
   import {onMount} from "svelte";
   import LogoutButton from "$components/LogOutButton.svelte";
   import AddProject from "$components/AddProject.svelte";
   import ProjectItem from "$components/ProjectItem.svelte";
-import AddTask from "$components/AddTask.svelte";
-
-  onMount(() => {
-    updatePath("projects");
-  });
+  import AddTask from "$components/AddTask.svelte";
 </script>
 
 <LogoutButton />
@@ -31,6 +26,6 @@ import AddTask from "$components/AddTask.svelte";
 
 <style>
   h1 {
-    color: var(--white);
+    color: var(--babyPink);
   }
 </style>

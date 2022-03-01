@@ -1,11 +1,6 @@
 <script>
   import "../../app.css";
-  import { updatePath } from "$stores/GlobalStore";
   import {onMount} from "svelte";
-
-  onMount(() => {
-    updatePath("auth");
-  });
 </script>
 
 <div class="wrapper">

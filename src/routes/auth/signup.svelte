@@ -10,7 +10,7 @@
 <input type="email" name="email" placeholder="Email Address" />
 <input type="password" name="password" placeholder="Password" />
 <input type="password" name="confirmPassword" placeholder="Confirm Password" />
-<button>
+<button class="submit">
   Sign Up
   <Arrow />
 </button>
@@ -22,48 +22,12 @@
 <style>
   h1 {
     font-size: 3.875rem;
-    color: var(--white);
-    margin-bottom: 20px;
   }
 
   .row {
     display: flex;
     gap: 20px;
   }
-
-  input[type=text],
-  input[type=email],
-  input[type=password] {
-    background: var(--electricIndigo);
-    border: none;
-    color: white;
-    margin-bottom: 20px;
-  }
-
-  ::placeholder {
-    color: var(--melrose);
-  }
-
-  button {
-    background: var(--goldenTainoi);
-    color: var(--purple);
-    cursor: pointer;
-    font-size: 1.25rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    width: 100%;
-    border: none;
-    padding: 20px 0;
-    border-radius: 1rem;
-  }
-
-  button:hover {
-    background: white;
-  }
-
   p {
     color: white;
   }

@@ -5,11 +5,11 @@
   let name: string = '';
 
   const AddNewProject = async () => {
-    const project = {
+    const project = {                             // build the new project object
       name
     }
-    const results = await addProject(project);
-    name = '';
+    const results = await addProject(project);    // add the new project
+    name = '';                                    // reset project name field
   }
 </script>
 
@@ -25,16 +25,6 @@
     display: flex;
     gap: 20px;
     margin-bottom: 40px;
-  }
-
-  input {
-    border: none;
-    background: var(--lavandarIndigo);
-    color: var(--white);
-  }
-
-  input::placeholder {
-    color: var(--melrose);
   }
 
   button {
